@@ -1,0 +1,82 @@
+html {
+  background: black;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  margin: -150px 0 0 -150px;
+}
+
+.square {
+  height: 94%;
+  width: 94%;
+  background: white;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  margin: -50% 0 0 -50%;
+}
+
+.black {
+  background: brown;
+  -webkit-animation: rotate 10s infinite ease-in-out;
+  animation: rotate 15s infinite ease-in-out;
+}
+
+.black:hover {
+  background: black;
+}
+
+a {
+  text-align: center;
+  color: white;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    height: 94%;
+    width: 94%;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    height: 100%;
+    width: 100%;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    height: 94%;
+    width: 94%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    height: 94%;
+    width: 94%;
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    height: 100%;
+    width: 100%;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    height: 94%;
+    width: 94%;
+  }
+}

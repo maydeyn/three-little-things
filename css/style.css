@@ -4,6 +4,16 @@ html {
   position: relative;
   overflow: hidden;
 }
+a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 900;
+}
 
 .container {
   height: 300px;
@@ -17,7 +27,7 @@ html {
 .square {
   height: 94%;
   width: 94%;
-  background: white;
+  background: black;
   position: absolute;
   top: 40%;
   left: 40%;
@@ -31,7 +41,7 @@ html {
 }
 
 .black:hover {
-  background: black;
+  background: white;
 }
 
 a {

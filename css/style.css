@@ -44,11 +44,6 @@ a {
   background: white;
 }
 
-a {
-  text-align: center;
-  color: white;
-}
-
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
